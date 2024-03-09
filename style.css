@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+  .rectangle {
+    width: 100px;
+    height: 100px;
+    fill: red;
+    animation: moveRectangle 5s infinite;
+    
+  }
+
+  @keyframes moveRectangle {
+    0% {transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+      fill: pink;
+      stroke: darkorchid;
+    }
+    100% {
+      transform: translateX(0);
+      fill: aqua;
+      stroke: blue;
+    }
+  }
+
